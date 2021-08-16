@@ -1,0 +1,48 @@
+body {
+  background-image: url("groceryimage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#division {
+  align-items: center;
+  width: 45%;
+  margin: auto;
+  background-color: #b7c2bc;
+  padding: 5px 20px 5px 20px;
+}
+
+h1 {
+  background-color: #262626;
+  padding: 10px 5px;
+  color: #00cc00;
+  text-align: center;
+  font-family: Arial;
+}
+h2 {
+  text-align: center;
+}
+#phone1 {
+  color: #8c8c8c;
+  float: right;
+}
+#email1 {
+  float: right;
+}
+#name1 {
+  float: right;
+}
+
+#submit {
+  align-self: center;
+  text-align: center;
+  margin-left: 60mm;
+}
+
+#ordersummary {
+  font-size: 120%;
+}
+form {
+  margin-left: 10mm;
+}

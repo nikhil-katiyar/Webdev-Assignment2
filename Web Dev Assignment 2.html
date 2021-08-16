@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="Grocery.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script src="form.js"></script>
+  </head>
+
+  <body>
+    <h1>Welcome to the Grocery Store</h1>
+    <div id="division">
+      <form name="groceryform" method="post" action="formdata.php">
+        <div class="row">
+          <h2>Enter your Order Details</h2>
+          <div class="col-md-7">
+            Name:<span id="name1"></span><br />
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              name="costumer name"
+              onblur="check();"
+              title="Enter Full Name"
+            />
+
+            <br />
+            Phone number:<span id="phone1">xxx-xxx-xxxx</span>
+            <br />
+            <input
+              class="form-control"
+              id="phone"
+              type="text"
+              name="costumer phonenumber"
+              onblur="checknum();"
+              title="Enter Phone number"
+            />
+
+            <br />
+            Email:<span id="email1"></span><br />
+            <input
+              class="form-control"
+              id="email"
+              type="text"
+              name="costumer email"
+              onblur="checkmail();"
+              title="Enter valid email"
+            />
+
+            <br />
+            Do you have our membership card?:<br />
+            <input id="member" type="radio" name="membership" value="y" />
+            <span>Yes</span>
+            <input id="member2" type="radio" name="membership" value="n" />
+            <span>No</span>
+            <br />
+            (If Yes) 5 digit Card No:<br />
+            <input
+              id="card"
+              type="text"
+              name="card number"
+              onblur="checkcard();"
+              title="Enter card number"
+            />
+            <span id="card1"></span>
+            <br />
+            <br />
+
+            What do you want?:<br />
+            <input
+              type="checkbox"
+              name="Potato"
+              value="Potato"
+              onclick="quantity();"
+            />
+            Potato (Rs.20/kg)<br />
+            Quantity &nbsp;<input name="q1" type="number" id="a" min="0" />
+            <br />
+            <input type="checkbox" name="Tomato" value="Tomato" />
+            Tomato(Rs.40/kg)<br />
+            Quantity &nbsp;<input
+              type="number"
+              name="q2"
+              id="b"
+              min="0"
+            /><br />
+            <input type="checkbox" value="Onion" name="Onion" />
+            Onion(Rs.50/kg)<br />
+            Quantity &nbsp;<input
+              type="number"
+              id="c"
+              min="0"
+              name="q3"
+            /><br />
+            <input type="checkbox" name="Cabbage" value="Cabbage" />
+            Cabbage(Rs.25/pc)<br />
+            Quantity &nbsp;<input
+              type="number"
+              id="d"
+              min="0"
+              name="q4"
+            /><br />
+            <input type="checkbox" name="Capsicum" value="Capsicum" />
+            Capsicum(Rs.30/kg)<br />
+            Quantity &nbsp;<input
+              type="number"
+              id="e"
+              min="0"
+              name="q5"
+            /><br /><br />
+            Method of payment:
+            <input type="radio" id="f" name="payment" value="cash" />Cash
+            <input
+              type="radio"
+              id="g"
+              name="payment"
+              value="card"
+            />Card<br /><br />
+            <input
+              class="btn btn-secondary"
+              type="submit"
+              id="submit"
+              name="create"
+              value="Submit Order"
+              onclick="calc()"
+            />
+            <!--<button id="submit" onclick="calc();">Submit Order</button><br />
+            <span id="ordersummary">&nbsp; </span>-->
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
